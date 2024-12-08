@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import NavbarA from './components/NavbarA';
 import BackgroundWrapper from './components/BackgroundWrapper';
+import Footer from './components/Footer';
 
 
 import Home from './components/Home';
@@ -14,6 +15,7 @@ import ContactUs from './components/ContactUs';
 import Orders from './components/Orders';
 import AddCard from './components/Addcard';
 import Corder from './components/Corder';
+import ViewOrders from './components/ViewOrders';
 
 
 
@@ -30,11 +32,15 @@ const App: React.FC = () => {
               <BackgroundWrapper>
                 <Routes>
                   <Route path="/" element={<HomeA />} />
+                  <Route path="/cards" element={<Cards />} />
                   <Route path="/addCard" element={<AddCard />} /> {/* For adding a card */}
+                  <Route path="/vieworders" element={<ViewOrders />} /> {/* For adding a card */}
                   <Route path="/editCard/:id" element={<AddCard />} /> {/* For editing a card */}
                   {/* Add more admin routes here */}
                 </Routes>
               </BackgroundWrapper>
+              <Footer />
+              
             </>
           }
         />
@@ -54,6 +60,7 @@ const App: React.FC = () => {
                   <Route path="/corder" element={<Corder />} />
                 </Routes>
               </BackgroundWrapper>
+              <Footer />
             </>
           }
         />

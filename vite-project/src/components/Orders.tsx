@@ -48,7 +48,10 @@ const OrderForm: React.FC = () => {
     <div className="container mx-auto pt-[10rem]">
       <section>
         <div className="font-[sans-serif] max-w-6xl max-md:max-w-md mx-auto px-4">
-          <h1 className="text-2xl font-bold text-gray-900 mb-6">Place Your Order</h1>
+          <h1 className="text-2xl font-bold text-gray-900 ">Place Your Order</h1>
+          <p className=" text-xl text-gray-900 leading-relaxed mb-6">
+            Please send order 2 weeks earlier
+          </p>
           <form onSubmit={handleSubmit} className="space-y-6">
             {/* ID */}
             <div>

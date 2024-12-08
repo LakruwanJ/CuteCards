@@ -72,7 +72,7 @@ export default function Navbar() {
               {/* Home Link */}
               <li role="none" className="flex items-stretch">
                 <Link
-                  to="/"
+                  to="/admin"
                   role="menuitem"
                   className="flex items-center gap-2 py-4 text-xl transition-colors duration-300 hover:text-[#8174A0] focus:text-[#A888B5] lg:px-8"
                 >
@@ -83,7 +83,7 @@ export default function Navbar() {
               {/* Cards Link */}
               <li role="none" className="flex items-stretch">
                 <Link
-                  to="/cards"
+                  to="/admin/cards"
                   role="menuitem"
                   className="flex items-center gap-2 py-4 text-xl text-[#A888B5] transition-colors duration-300 hover:text-[#EFB6C8] focus:text-[#EFB6C8] lg:px-8"
                 >
@@ -99,6 +99,17 @@ export default function Navbar() {
                   className="flex items-center gap-2 py-4 text-xl transition-colors duration-300 hover:text-[#FFD2A0] focus:text-[#3B1E54] lg:px-8"
                 >
                   <span>Orders</span>
+                </Link>
+              </li>
+
+              {/* Order Link */}
+              <li role="none" className="flex items-stretch">
+                <Link
+                  to="/admin/addcard"
+                  role="menuitem"
+                  className="flex items-center gap-2 py-4 text-xl transition-colors duration-300 hover:text-[#FFD2A0] focus:text-[#3B1E54] lg:px-8"
+                >
+                  <span>Add Card</span>
                 </Link>
               </li>
             </ul>

@@ -4,7 +4,7 @@ import { useInView } from "framer-motion";
 import HomeImage from '../Images/home.json';
 import AnimationOne from "../Function/AnimationOne.tsx"
 import Carousel from "./Carousel.tsx";
-
+import Cards from "./Cards";
 
 const Home: React.FC = () => {
 
@@ -45,9 +45,20 @@ const Home: React.FC = () => {
 
                 <Carousel />
                 <br /><br />
-                <h1 className="text-3xl font-bold underline">Home Page</h1><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-                        <h1 className="text-3xl font-bold underline">Home Page</h1><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-                        <h1 className="text-3xl font-bold underline">Home Page</h1><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+
+                <div className="flex items-center justify-center my-4">
+                    <span className="flex-grow border-t border-gray-400 mx-2"></span>
+                    <h2 className="text-gray-800 md:text-4xl text-2xl font-extrabold mb-4 md:!leading-[55px]">
+                        Cards
+                    </h2>
+                    <span className="flex-grow border-t border-gray-400 mx-2"></span>
+                </div>
+                
+                <br /><br />
+
+                <Cards />
+
+                <br /><br />
 
             </div>
         </>
